@@ -19,8 +19,9 @@
 
     <!-- Section for completed tasks -->
     <div class="task-container">
-      <h2>Completed</h2>
-      {{$store.state.length}}
+      <h2>Completed  <span class="" style="color: red;">{{$store.state.length}}</span>
+      </h2>
+      
 
       
       <div v-for="task in $store.state.tasks" :key="task.id">
